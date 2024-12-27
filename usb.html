@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+.table{
+display: grid;
+max-width: max-content;
+margin: 0px auto;
+text-align: center;
+grid-template-columns: repeat(4, minmax(1em, auto));
+grid-template-rows: repeat(2, minmax(1em, auto));
+gap: 0px;
+padding: 1em;
+}
+.table i{
+box-shadow: 1px 1px 0 0 currentColor, 1px 1px 0 0 currentColor inset;
+min-inline-size: 1.5em;
+min-block-size: 1.5em;
+position: relative;
+font-size: inherit;
+font-style: inherit;
+line-height: inherit;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+text-transform: full-width;
+font-variant: petite-caps;
+}
+.table.usb i:nth-child(5){
+grid-column: 1 / span 4;
+}
+
+.table.usb i:nth-child(4){
+background:grey;
+}
+.table.usb i:nth-child(3){
+background:green;
+}
+.table.usb i:nth-child(2){
+background:white;
+}
+.table.usb i:nth-child(1){
+background:red;
+}
+.table.b i:nth-child(17),
+.table.a i:nth-child(17){
+grid-column: 1 / span 8;
+}
+
+.rj-45.a i:nth-child(3),
+.rj-45.a i:nth-child(6),
+.rj-45.b i:nth-child(1),
+.rj-45.b i:nth-child(2) {
+  background-color: orange;
+}
+
+.rj-45.a i:nth-child(1),
+.rj-45.a i:nth-child(2),
+.rj-45.b i:nth-child(3),
+.rj-45.b i:nth-child(6) {
+  background-color: green;
+}
+
+.rj-45 i:nth-child(4),
+.rj-45 i:nth-child(5) {
+  background-color: blue;
+}
+
+.rj-45 i:nth-child(7),
+.rj-45 i:nth-child(8) {
+  background-color: brown;
+}
+
+.rj-45 i:nth-child(1),
+.rj-45 i:nth-child(3),
+.rj-45 i:nth-child(5),
+.rj-45 i:nth-child(7) {
+  background-image: repeating-linear-gradient(-45deg, transparent 0%, transparent 7%, white 9%, white 14%);
+}
+.rj-45 i:nth-child(-n+8) {
+  color: #777;
+}
+.rj-45 i:nth-child(-n+8) {
+  text-decoration: underline;
+}
+
+#table.table i:nth-child(25){
+grid-column: 1 / span 8;
+}
+.c0 {
+        text-decoration:line-through;
+        background:#eee;
+      }
+
+      .c1 {
+          background-image: repeating-linear-gradient(-45deg, transparent 0%, transparent 7%, white 9%, white 14%);
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+<div class="table b rj-45" title="clip is pointed away from you, T-568B + T-568B Straight-Through Ethernet cable"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>o</i><i>O</i><i>g</i><i>B</i><i>b</i><i>G</i><i>br</i><i>BR</i><i>T-568B</i></div>
+<div class="table a rj-45" title="clip is pointed away from you, T-568A + T-568B Crossower Ethernet cable"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i>g</i><i>G</i><i>o</i><i>B</i><i>b</i><i>O</i><i>br</i><i>BR</i><i>T-568A</i></div>
+<div class="table usb"><i>+5V</i><i>-D</i><i>+D</i><i>-5V</i><i>USB</i></div>
+
+<div class="table" id="table"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i><i>7</i><i>8</i><i class="c1"></i><i></i><i class="c1"></i><i></i><i class="c1"></i><i></i><i class="c1"></i><i></i><i class="c0">g</i><i>G</i><i class="c0">o</i><i>B</i><i class="c0">b</i><i>O</i><i class="c0">br</i><i>BR</i><i>T-568A</i></div>
+</main>
+    <footer></footer>
+  </body>
+</html>
